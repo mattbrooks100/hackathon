@@ -1,52 +1,86 @@
-body {
-    background-color: darkcyan;
-}
-
 header {
-    display: flex;
-    align-items: center;
-    background-color:darkslateblue;
-    border: 3px solid black;
+  display: flex;
+  align-items: center;
+  background-color: darkslateblue;
+  border: 3px solid black;
 }
 
 h1 {
-    font-size: 72px;
-    color:antiquewhite;
+  font-size: 72px;
+  color: antiquewhite;
 }
 
 #header-cat {
-    border: 12px solid rgb(172, 157, 208);
-    border-radius: 50%;
-    margin: 20px;
-    transform: scaleX(-1);
+  border: 12px solid rgb(172, 157, 208);
+  border-radius: 50%;
+  margin: 20px;
+  transform: scaleX(-1);
+  height: 150px;
 }
 
 .container {
-    display: flex;
-    height: 700px;
+  display: flex;
+  height: fit-content;
 }
 
 .cat-container {
-    display: flex;
-    margin: 10px;
-    border-radius: 10px;
-    justify-content: center;
-    align-items: center;
-    background-color: antiquewhite;
+  display: flex;
+  margin: 10px;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
 }
 
 .cat-post {
-    border: 3px solid black;
-    border-radius: 10px;
-    margin: 10px;
-    width: auto;
-    max-height: 600px;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  width: auto;
+  max-height: 400px;
+}
+
+.cat-post:hover {
+  filter: sepia(100%);
+  transition: 2s ease;
+  box-shadow: 1px 1px black, 2px 2px black, 3px 3px black, 4px 4px black, 5px 5px black,
+    6px 6px black;
+  transition: 1s ease;
 }
 
 .caption {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  font-size: 28px;
+  font-family: "Caveat", cursive;
+  word-wrap: normal;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.control-button {
+  height: fit-content;
+  width: fit-content;
+  margin: 5px;
+  font-size: 32px;
+  font-family: "Caveat", cursive;
+  border-radius: 10px;
+}
+
+.do-not-click {
+  margin-left: 10px;
+}
+
+.dog {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  height: 75%;
+  z-index: 2;
 }

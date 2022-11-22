@@ -3,13 +3,13 @@ body{
   padding:0;
   font-family:sans-serif;
   background:darkcyan;
-  overflow:hidden;
+  /* overflow:hidden; */
 }
 
 .center{
-  position:absolute;
-  top:10%;
-  left:40%;
+  position: relative;
+  top:25px;
+  left:200px;
   transform:prespective(1000px) translate(-50%,-50%);
   transform:skewY(15deg);
   transition:0.5s;
