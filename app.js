@@ -1,4 +1,4 @@
-const $body = $('body');
+const $body = $("body");
 const $container = $(".container");
 const catPics = ["juni1", "juni2", "juni3", "juni4", "juni5", "juni6", "dixie1", "dixie2"];
 
@@ -33,7 +33,7 @@ $container.slick({
   autoplaySpeed: 3000,
 });
 
-//=========================== SLICK CONTROLS ===========================//
+//========================= CAROUSEL CONTROLS =========================//
 const $pause = $("#pause");
 $pause.click(() => {
   $container.slick("slickPause");
@@ -46,12 +46,12 @@ $play.click(() => {
 
 //=========================== SELF-DESTRUCT ===========================//
 const $noClick = $(".do-not-click");
-const $dog = $(`<img src="images/roll_dog.gif" class="dog">`)
+const $dog = $(`<img src="images/roll_dog.gif" class="dog">`);
 $noClick.click(() => {
   const soundtrack = new Howl({
     src: ["8_bit_sound.mp3"],
     autoplay: true,
     loop: true,
   });
-$body.prepend($dog);
+  $body.prepend($dog);
 });
